@@ -1,49 +1,97 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+// See fail asendab olemasoleva src/pages/index.astro
+// Kohanda importide teed (BaseHead, Header, Footer) vastavalt oma projekti struktuurile,
+// kui need erinevad standardsest Astro "blog" template'ist.
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, CATEGORIES } from "../consts";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="et">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<h1>Rahafookus — sinu fookus rahaasjadele</h1>
+				<p>
+					Rahafookus on rahale ja finantsidele keskendunud <strong>informatiivne ja hariduslik</strong>
+					veebileht. Meie eesmärk on koguda ühte kohta kasulikku, arusaadavat ja usaldusväärset
+					infot, mis aitab sul oma rahaasjades paremaid otsuseid teha — olgu tegu investeerimise,
+					laenude, säästmise, panganduse või krüptovaluutadega.
+				</p>
+				<p>
+					Uurime teemasid lihtsas ja selges keeles, ilma keerulise finantsžargoonita, et igaüks
+					saaks vajaliku info kätte, sõltumata varasemast kogemusest.
+				</p>
+			</section>
+
+			<section class="categories">
+				<h2>Kategooriad</h2>
+				<div class="category-grid">
+					{
+						CATEGORIES.map((category) => (
+							<a class="category-card" href={`/kategooria/${category.slug}/`}>
+								<h3>{category.name}</h3>
+								<p>{category.description}</p>
+							</a>
+						))
+					}
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.hero {
+		max-width: 720px;
+		margin: 0 auto 3rem auto;
+		padding: 2rem 1rem 0 1rem;
+		text-align: left;
+	}
+	.hero h1 {
+		margin-bottom: 1rem;
+	}
+	.hero p {
+		line-height: 1.6;
+	}
+	.categories {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 1rem 3rem 1rem;
+	}
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1.25rem;
+		margin-top: 1.5rem;
+	}
+	.category-card {
+		display: block;
+		padding: 1.25rem;
+		border: 1px solid #ddd;
+		border-radius: 8px;
+		text-decoration: none;
+		color: inherit;
+		transition: box-shadow 0.15s ease, transform 0.15s ease;
+	}
+	.category-card:hover {
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+		transform: translateY(-2px);
+	}
+	.category-card h3 {
+		margin: 0 0 0.5rem 0;
+	}
+	.category-card p {
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.5;
+		color: #555;
+	}
+</style>

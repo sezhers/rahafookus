@@ -1,0 +1,61 @@
+---
+// See fail läheb src/pages/meist.astro
+// Kustuta vana src/pages/about.astro, et vältida kahte samasisulist lehte,
+// ja uuenda Header'is olev link (juba tehtud allolevas Header.astro failis).
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_DESCRIPTION } from "../consts";
+
+const title = "Meist | Rahafookus";
+---
+
+<!doctype html>
+<html lang="et">
+	<head>
+		<BaseHead title={title} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="meist">
+			<h1>Meist</h1>
+
+			<p>
+				Rahafookus on rahale ja finantsidele keskendunud informatiivne ja hariduslik veebileht.
+				Meie eesmärk on koondada ühte kohta selget ja kasulikku infot investeerimise, laenude,
+				panganduse, säästmise, eelarve koostamise ja krüptovaluutade kohta — nii, et see oleks
+				arusaadav igaühele, sõltumata varasemast kogemusest rahaasjadega.
+			</p>
+
+			<h2>Oluline märkus</h2>
+			<p>
+				Rahafookus <strong>ei anna finantsnõu</strong>. Meie sisu on mõeldud ainult
+				informatiivsel ja hariduslikul eesmärgil ega asenda personaalset finants-, investeerimis-
+				ega maksunõustamist. Enne oluliste rahaliste otsuste tegemist soovitame alati pöörduda
+				vastava valdkonna kvalifitseeritud spetsialisti poole.
+			</p>
+
+			<h2>Veebilehe omanik</h2>
+			<p>
+				Rahafookus.ee veebilehe omanik ja sisu toimetaja on <strong>Red Hornet OÜ</strong>.
+				Lisainfot ettevõtte kohta leiad veebilehelt <a href="https://hornet.ee" target="_blank" rel="noopener noreferrer">hornet.ee</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.meist {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 2rem 1rem 3rem 1rem;
+		line-height: 1.6;
+	}
+	.meist h1 {
+		margin-bottom: 1.5rem;
+	}
+	.meist h2 {
+		margin-top: 2rem;
+	}
+</style>
