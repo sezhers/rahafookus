@@ -1,16 +1,16 @@
 ---
-// See fail läheb src/pages/kategooria/[category].astro
+// See fail läheb src/pages/[category].astro (juba tehtud sinu poolt).
 // Genereerib automaatselt kõigi CATEGORIES kirjete jaoks eraldi lehe,
-// nt /kategooria/investeerimine/, /kategooria/krypto/ jne.
+// nt rahafookus.ee/investeerimine, rahafookus.ee/krypto jne.
 // Iga leht kuvab kõik src/content/blog/ postitused, mille frontmatter'is
 // on vastav "category" väärtus (vt src/content/config.ts).
 
 import { getCollection } from "astro:content";
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
-import { CATEGORIES, SITE_TITLE } from "../../consts";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import { CATEGORIES, SITE_TITLE } from "../consts";
 
 export async function getStaticPaths() {
 	const allPosts = await getCollection("blog");
@@ -28,19 +28,21 @@ export async function getStaticPaths() {
 }
 
 const { category, posts } = Astro.props;
-const title = `${category.name} | ${SITE_TITLE}`;
+const title = category.seoTitle ?? `${category.name} | ${SITE_TITLE}`;
+const description = category.metaDescription ?? category.description;
+const intro = category.intro ?? category.description;
 ---
 
 <!doctype html>
 <html lang="et">
 	<head>
-		<BaseHead title={title} description={category.description} />
+		<BaseHead title={title} description={description} />
 	</head>
 	<body>
 		<Header />
 		<main class="category-page">
 			<h1>{category.name}</h1>
-			<p class="category-description">{category.description}</p>
+			<p class="category-description">{intro}</p>
 
 			{
 				posts.length === 0 ? (

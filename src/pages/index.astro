@@ -35,7 +35,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, CATEGORIES } from "../consts";
 				<div class="category-grid">
 					{
 						CATEGORIES.map((category) => (
-							<a class="category-card" href={`/kategooria/${category.slug}/`}>
+							<a class="category-card" href={`/${category.slug}/`}>
 								<h3>{category.name}</h3>
 								<p>{category.description}</p>
 							</a>
