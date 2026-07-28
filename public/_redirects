@@ -1,0 +1,28 @@
+# See fail läheb kausta public/_redirects
+# Cloudflare Pages loeb selle build'i ajal automaatselt ja rakendab
+# määratud HTTP staatuskoodiga ümbersuunamisi (301 = püsiv).
+#
+# Formaat: VANA_TEE  UUS_TEE  STAATUSKOOD
+
+# Vana postituste koondleht -> avaleht
+/postitused/  /  301
+
+# Vanad kategooriate URL-id (/kategooria/x/) -> uued (/x/)
+/kategooria/investeerimine/         /investeerimine/          301
+/kategooria/laenud-ja-krediit/      /laenud-ja-krediit/       301
+/kategooria/nutikas-pangandus/      /nutikas-pangandus/       301
+/kategooria/rahatarkus/             /rahatarkus/              301
+/kategooria/saastmine-ja-eelarve/   /saastmine-ja-eelarve/    301
+/kategooria/krypto/                 /krypto/                  301
+
+# Vanad postituste URL-id (/postitused/<slug>/) -> uued (/<kategooria>/<slug>/)
+# Kõik 9 praegust postitust kuuluvad "investeerimine" kategooriasse.
+/postitused/kuidas-alustada-investeerimisega/  /investeerimine/kuidas-alustada-investeerimisega/  301
+/postitused/aktsiate-ostmine-algajale/         /investeerimine/aktsiate-ostmine-algajale/         301
+/postitused/mis-on-volakiri/                   /investeerimine/mis-on-volakiri/                   301
+/postitused/kinnisvarasse-investeerimine/      /investeerimine/kinnisvarasse-investeerimine/      301
+/postitused/tahtajaline-hoius-vordlus/         /investeerimine/tahtajaline-hoius-vordlus/         301
+/postitused/mis-on-indeksfond/                 /investeerimine/mis-on-indeksfond/                 301
+/postitused/kolmas-pensionisammas/             /investeerimine/kolmas-pensionisammas/             301
+/postitused/uhisrahastus/                      /investeerimine/uhisrahastus/                      301
+/postitused/finantsvabadus/                    /investeerimine/finantsvabadus/                    301
