@@ -1,0 +1,47 @@
+---
+// See fail läheb src/components/AuthorByline.astro
+// Kasutamine postituse layoutis (nt src/layouts/BlogPost.astro):
+//
+//   import AuthorByline from "../components/AuthorByline.astro";
+//   ...
+//   <AuthorByline slug="sergei" />
+//
+// Kui postitusel on tulevikus mitu võimalikku autorit, saad slug'i
+// tuua ka postituse enda frontmatter'ist (vt allpool olevat juhendit).
+
+import { AUTHORS } from "../consts";
+
+interface Props {
+	slug: string;
+}
+
+const { slug } = Astro.props;
+const author = AUTHORS.find((a) => a.slug === slug);
+---
+
+{
+	author && (
+		<div class="author-byline">
+			<p>
+				Autor:{" "}
+				<a href={`/meist/${author.slug}/`}>
+					<strong>{author.name}</strong>
+				</a>
+			</p>
+		</div>
+	)
+}
+
+<style>
+	.author-byline {
+		margin: 1.5rem 0;
+		padding: 0.75rem 1rem;
+		border-left: 3px solid #ddd;
+		background: #fafafa;
+		font-size: 0.95rem;
+		color: #444;
+	}
+	.author-byline a {
+		color: inherit;
+	}
+</style>

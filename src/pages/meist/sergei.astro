@@ -1,0 +1,64 @@
+---
+// See fail läheb src/pages/meist/sergei.astro
+// Tulemus: rahafookus.ee/meist/sergei/
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { AUTHORS, SITE_TITLE } from "../../consts";
+
+const author = AUTHORS.find((a) => a.slug === "sergei")!;
+const title = `${author.name} | ${SITE_TITLE}`;
+const description = `${author.name} — ${author.role}. ${author.shortBio}`;
+---
+
+<!doctype html>
+<html lang="et">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main class="author-page">
+			<h1>{author.name}</h1>
+			<p class="role">{author.role}</p>
+
+			<p>
+				Tere, mina olen Sergei Ivanov. Olen ise investeerinud alates 2013. aastast erinevatesse
+				varatüüpidesse — fondidesse, aktsiatesse, võlakirjadesse, ühisrahastusse ja ka
+				krüptovaluutadesse. Nende aastate jooksul olen läbi teinud nii turgude tõuse kui languseid
+				ning õppinud omal nahal, mis toimib ja mis mitte. Samuti olen teinud läbi mitmeid vigu, millest olen saanud väärtuslikke õppetunde.
+			</p>
+
+			<p>
+				Rahafookus sündis soovist jagada seda kogemust edasi lihtsas ja arusaadavas keeles, ilma
+				keerulise finantsžargoonita — nii nagu ma ise oleksin tahtnud investeerimisega alustades
+				kelleltki kuulda.
+			</p>
+
+			<p>
+				Olen Rahafookus.ee veebilehe omaniku <strong>Red Hornet OÜ</strong> juhatuse liige ja
+				omanik. Rahafookuse sisu on informatiivsel ja hariduslikul eesmärgil ega kujuta endast
+				personaalset finantsnõu.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.author-page {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 2rem 1rem 3rem 1rem;
+		line-height: 1.6;
+	}
+	.author-page h1 {
+		margin-bottom: 0.25rem;
+	}
+	.role {
+		color: #666;
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+</style>

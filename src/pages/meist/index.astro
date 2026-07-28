@@ -2,10 +2,10 @@
 // See fail läheb src/pages/meist.astro
 // Kustuta vana src/pages/about.astro, et vältida kahte samasisulist lehte,
 // ja uuenda Header'is olev link (juba tehtud allolevas Header.astro failis).
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_DESCRIPTION } from "../consts";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_DESCRIPTION } from "../../consts";
 
 const title = "Meist | Rahafookus";
 ---
@@ -38,6 +38,12 @@ const title = "Meist | Rahafookus";
 			<h2>Veebilehe omanik</h2>
 			<p>
 				Rahafookus.ee veebilehe omanik ja sisu toimetaja on <strong>Red Hornet OÜ</strong>.
+			</p>
+
+			<h2>Autor</h2>
+			<p>
+				Rahafookuse sisu kirjutab <a href="/meist/sergei/">Sergei Ivanov</a>, Red Hornet OÜ
+				juhatuse liige ja omanik, kes on ise investeerinud alates 2013. aastast.
 			</p>
 		</main>
 		<Footer />

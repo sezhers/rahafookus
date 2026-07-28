@@ -14,6 +14,16 @@ const blog = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
+			category: z.enum([
+				"investeerimine",
+				"laenud-ja-krediit",
+				"nutikas-pangandus",
+				"rahatarkus",
+				"saastmine-ja-eelarve",
+				"krypto",
+			]),
+			// Valikuline — kui postitusel puudub, kasutame layoutis vaikimisi "sergei".
+			author: z.string().optional(),
 		}),
 });
 

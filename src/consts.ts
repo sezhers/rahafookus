@@ -4,6 +4,25 @@ export const SITE_TITLE = "Rahafookus";
 export const SITE_DESCRIPTION =
   "Rahafookus on rahale ja finantsidele keskendunud informatiivne ja hariduslik veebileht. Meie eesmärk on anda kõigile lugejatele kasulikku ja arusaadavat infot rahaasjade kohta.";
 
+export interface Author {
+  name: string;
+  slug: string;
+  role: string;
+  shortBio: string;
+}
+
+// Kui lisandub tulevikus rohkem autoreid, lisa siia lihtsalt uus kirje
+// ja loo vastav src/pages/meist/[slug].astro fail.
+export const AUTHORS: Author[] = [
+  {
+    name: "Sergei Ivanov",
+    slug: "sergei",
+    role: "Red Hornet OÜ juhatuse liige ja omanik",
+    shortBio:
+      "Investeerin alates 2013. aastast erinevatesse varaklassidesse — fondidesse, aktsiatesse, võlakirjadesse, ühisrahastusse ja krüptovaluutadesse.",
+  },
+];
+
 export interface Category {
   name: string;
   slug: string;
