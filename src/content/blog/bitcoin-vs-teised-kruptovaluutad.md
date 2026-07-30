@@ -5,13 +5,13 @@ pubDate: "2026-08-02"
 category: "krypto"
 faq:
   - question: "Mis vahe on Bitcoinil ja altcoinidel?"
-    answer: "Bitcoin oli esimene krüptovaluuta ja keskendub peamiselt väärtuse säilitamisele ning lihtsatele tehingutele. Altcoin (kõik teised krüptovaluutad) on koondmõiste, mille alla kuulub väga erinevate eesmärkide ja tehnoloogiatega projekte, alates nutilepingute platvormidest kuni stabiilcoinideni."
+    answer: "Bitcoin oli esimene krüptovaluuta ja keskendub peamiselt väärtuse säilitamisele ning lihtsatele tehingutele. Altcoin (kõik teised krüptovaluutad) on koondmõiste, mille alla kuulub väga erinevate eesmärkide ja tehnoloogiatega projekte, alates nutilepingute (ingl.k. smart contract) platvormidest kuni stablecoinideni."
   - question: "Kas Bitcoin on vähem riskantne kui teised krüptovaluutad?"
-    answer: "Bitcoinil on tavaliselt suurim turumaht ja pikim ajalugu, mistõttu käsitletakse teda sageli suhteliselt \"stabiilsemana\" krüptoturu siseselt, kuid see ei tähenda, et see oleks madala riskiga vara — hinnakõikumised võivad olla endiselt märkimisväärsed."
+    answer: "Bitcoinil on suurim kapitalisatsioon ja pikim ajalugu, mistõttu käsitletakse teda sageli suhteliselt \"stabiilsemana\" krüptoturu siseselt, kuid see ei tähenda, et see oleks madala riskiga vara — hinnakõikumised võivad olla endiselt märkimisväärsed."
   - question: "Miks on olemas nii palju erinevaid krüptovaluutasid?"
     answer: "Erinevad projektid püüavad lahendada erinevaid probleeme või pakkuda erinevat funktsionaalsust — mõned keskenduvad kiirematele tehingutele, teised nutilepingutele, kolmandad hinnastabiilsusele. See mitmekesisus peegeldab erinevaid tehnilisi ja äriideid, mitte ainult Bitcoini koopiaid."
   - question: "Kas ma peaksin algajana ostma ainult Bitcoini või ka teisi krüptovaluutasid?"
-    answer: "See on isiklik otsus, mis sõltub sinu riskitaluvusest ja teadmistest. Paljud algajad eelistavad alustada Bitcoinist või suurema turumahuga projektidest, kuna neil on pikem ajalugu ja laiem tuntus, kuid see ei ole universaalne reegel."
+    answer: "See on isiklik otsus, mis sõltub sinu riskitaluvusest ja teadmistest. Paljud algajad eelistavad alustada Bitcoinist või muust suuremast projektist, kuna neil on pikem ajalugu ja laiem tuntus, kuid see ei ole universaalne reegel."
 ---
 
 Krüptomaastikul on tuhandeid erinevaid münte ja tokeneid, kuid enamik neist erineb Bitcoinist nii eesmärgi kui tehnoloogia poolest. Nende erinevuste mõistmine aitab paremini hinnata, millest üldse räägitakse, kui kuuled uudistest mõnest uuest krüptoprojektist.
@@ -25,12 +25,12 @@ Bitcoin oli esimene krüptovaluuta ja selle peamine eesmärk on toimida hajutatu
 "Altcoin" on koondnimetus kõigile krüptovaluutadele peale Bitcoini. Selle alla mahub väga erinevaid projekte:
 
 - **Nutilepingute platvormid (nt Ethereum).** Võimaldavad käivitada keerukamaid programme ja rakendusi otse blockchainil.
-- **Stabiilcoinid.** Krüptovaluutad, mille väärtus on seotud traditsioonilise valuutaga, et vähendada hinnakõikumist.
+- **Stablecoinid.** Krüptovaluutad, mille väärtus on seotud traditsioonilise valuutaga (näiteks USDC, mis on seotud USD-ga), et vähendada hinnakõikumist.
 - **Nišiprojektid.** Krüptovaluutad, mis keskenduvad konkreetsele valdkonnale, näiteks andmehoiule, mängudele või maksete kiirendamisele.
 
 ## Millele tähelepanu pöörata võrdlemisel
 
-- **Turumaht ja likviidsus.** Suurema turumahuga projektidel on tavaliselt lihtsam osta ja müüa ilma suuremate hinnamõjudeta.
+- **Turumaht ja likviidsus.** Suurema turumahuga projektidel on tavaliselt lihtsam osta ja müüa ilma suuremate hinnakõikumisteta.
 - **Projekti eesmärk ja kasutusala.** Mõista, mis probleemi projekt üritab lahendada ja kas see lahendus on reaalselt vajalik.
 - **Ajalugu ja meeskond.** Kaua on projekt eksisteerinud ja kui läbipaistev on selle arendusmeeskond.
 - **Riskitase.** Väiksema turumahuga ja lühema ajalooga projektid kannavad tavaliselt suuremat riski kui suuremad ja kauem eksisteerinud projektid.

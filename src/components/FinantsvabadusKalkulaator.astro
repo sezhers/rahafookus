@@ -1,0 +1,470 @@
+---
+// Interaktiivne finantsvabaduse kalkulaator.
+// Kasutab sama kolmetasandilist raamistikku, mis on kirjeldatud
+// src/content/blog/finantsvabadus.mdx artiklis:
+//   1. Finantsstabiilsus  — turvapadi (6 kuu kõik kulud) kogutud
+//   2. Finantssõltumatus  — portfell katab põhilised elukulud (4% reegel)
+//   3. Täielik finantsvabadus — portfell katab kõik soovitud kulud (4% reegel)
+const currentYear = new Date().getFullYear();
+---
+
+<div class="fv-calc" data-current-year={currentYear}>
+	<form class="fv-form">
+		<div class="fv-field">
+			<label for="fv-portfolio">Praeguse portfelli suurus</label>
+			<div class="fv-input-wrap">
+				<input type="number" id="fv-portfolio" min="0" step="100" value="5000" inputmode="decimal" />
+				<span class="fv-suffix">€</span>
+			</div>
+		</div>
+
+		<div class="fv-field">
+			<label for="fv-monthly">Igakuine investeering</label>
+			<div class="fv-input-wrap">
+				<input type="number" id="fv-monthly" min="0" step="10" value="300" inputmode="decimal" />
+				<span class="fv-suffix">€ / kuu</span>
+			</div>
+		</div>
+
+		<div class="fv-field">
+			<label for="fv-return">Eeldatav aastane tootlus</label>
+			<div class="fv-input-wrap">
+				<input type="number" id="fv-return" min="0" max="30" step="0.5" value="7" inputmode="decimal" />
+				<span class="fv-suffix">%</span>
+			</div>
+			<p class="fv-hint">Kui ei tea, kasuta ajaloolist keskmist 6–8%.</p>
+		</div>
+
+		<div class="fv-field">
+			<label for="fv-inflation">Eeldatav inflatsioon</label>
+			<div class="fv-input-wrap">
+				<input type="number" id="fv-inflation" min="0" max="15" step="0.5" value="2.5" inputmode="decimal" />
+				<span class="fv-suffix">%</span>
+			</div>
+		</div>
+
+		<div class="fv-field">
+			<label for="fv-essential">Põhilised kuukulud</label>
+			<div class="fv-input-wrap">
+				<input type="number" id="fv-essential" min="0" step="50" value="800" inputmode="decimal" />
+				<span class="fv-suffix">€ / kuu</span>
+			</div>
+			<p class="fv-hint">Eluase, kommunaalid, toit — kulud, ilma milleta hakkama ei saa.</p>
+		</div>
+
+		<div class="fv-field">
+			<label for="fv-all">Kõik kuukulud</label>
+			<div class="fv-input-wrap">
+				<input type="number" id="fv-all" min="0" step="50" value="1200" inputmode="decimal" />
+				<span class="fv-suffix">€ / kuu</span>
+			</div>
+			<p class="fv-hint">Kõik kulud kokku, sh reisimine ja hobid.</p>
+		</div>
+	</form>
+
+	<div class="fv-results" id="fv-results" aria-live="polite"></div>
+
+	<div class="fv-chart-wrap">
+		<p class="fv-chart-title">Portfelli prognoositud kasv (järgmised 50 aastat, tänases rahas)</p>
+		<div id="fv-chart"></div>
+	</div>
+
+	<p class="fv-disclaimer">
+		Arvutus on lihtsustatud hinnang, mis põhineb 4% reeglil ja eeldab, et sinu investeering
+		kasvab reaalväärtuses (st arvestades inflatsiooni) püsivas tempos. Tegelik tulemus sõltub
+		turgude käitumisest, maksudest ja paljudest muudest teguritest ega ole garanteeritud.
+	</p>
+</div>
+
+<style is:global>
+	.fv-calc {
+		margin: 2rem 0;
+		padding: 1.5rem;
+		border: 1px solid #ddd;
+		border-radius: 12px;
+		background: #fafafa;
+	}
+	.fv-form {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.25rem;
+	}
+	.fv-field label {
+		display: block;
+		font-weight: 700;
+		font-size: 0.92rem;
+		margin-bottom: 0.35rem;
+	}
+	.fv-input-wrap {
+		display: flex;
+		align-items: center;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		background: #fff;
+		overflow: hidden;
+	}
+	.fv-input-wrap input {
+		flex: 1;
+		border: none;
+		padding: 0.5rem 0.6rem;
+		font-size: 1rem;
+		min-width: 0;
+	}
+	.fv-input-wrap input:focus {
+		outline: 2px solid var(--accent);
+		outline-offset: -2px;
+	}
+	.fv-suffix {
+		padding: 0 0.6rem;
+		color: #777;
+		font-size: 0.9rem;
+		white-space: nowrap;
+	}
+	.fv-hint {
+		margin: 0.35rem 0 0 0;
+		font-size: 0.82rem;
+		color: #777;
+	}
+	.fv-results {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1rem;
+		margin-top: 1.75rem;
+	}
+	.fv-result-card {
+		padding: 0.9rem 1rem;
+		border-radius: 8px;
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		border-top: 3px solid var(--fv-tier-color, var(--accent));
+	}
+	.fv-result-card .fv-label {
+		display: block;
+		font-size: 0.95rem;
+		margin-bottom: 0.55rem;
+	}
+	.fv-detail-row {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding: 0.3rem 0;
+		border-top: 1px solid #f0f0f0;
+		font-size: 0.85rem;
+	}
+	.fv-detail-row:first-of-type {
+		border-top: none;
+	}
+	.fv-detail-row dt {
+		color: #777;
+	}
+	.fv-detail-row dd {
+		margin: 0;
+		font-weight: 700;
+		text-align: right;
+	}
+	.fv-detail-row.fv-detail-highlight dd {
+		color: var(--fv-tier-color, var(--accent));
+		font-size: 0.95rem;
+	}
+	.fv-chart-wrap {
+		margin-top: 1.75rem;
+	}
+	.fv-chart-title {
+		font-size: 0.85rem;
+		color: #666;
+		margin: 0 0 0.5rem 0;
+	}
+	.fv-chart-svg {
+		width: 100%;
+		height: auto;
+		display: block;
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		border-radius: 8px;
+	}
+	.fv-chart-hover-area {
+		cursor: crosshair;
+		touch-action: none;
+	}
+	.fv-disclaimer {
+		margin: 1.5rem 0 0 0;
+		font-size: 0.82rem;
+		color: #777;
+		font-style: italic;
+	}
+</style>
+
+<script>
+	const TIER_COLORS = ['#2f9e44', '#2337ff', '#000d8a'];
+
+	function formatEUR(value: number): string {
+		return new Intl.NumberFormat('et-EE', {
+			style: 'currency',
+			currency: 'EUR',
+			maximumFractionDigits: 0,
+		}).format(value);
+	}
+
+	function formatEURCompact(value: number): string {
+		return new Intl.NumberFormat('et-EE', {
+			notation: 'compact',
+			maximumFractionDigits: 1,
+		}).format(value) + ' €';
+	}
+
+	function monthsToYearsText(months: number): { time: string; year: string } {
+		if (months <= 0) {
+			return { time: 'Juba saavutatud', year: '' };
+		}
+		if (months > 600) {
+			return { time: 'Üle 50 aasta', year: '' };
+		}
+		const years = Math.floor(months / 12);
+		const remMonths = months % 12;
+		const time = remMonths === 0 ? `${years} a` : `${years} a ${remMonths} kuud`;
+		const currentYear = new Date().getFullYear();
+		const targetYear = currentYear + Math.ceil(months / 12);
+		return { time, year: `~${targetYear}` };
+	}
+
+	function monthsUntilTarget(
+		startBalance: number,
+		monthlyContribution: number,
+		monthlyRate: number,
+		target: number,
+	): number {
+		if (startBalance >= target) return 0;
+		let balance = startBalance;
+		for (let m = 1; m <= 600; m++) {
+			balance = balance * (1 + monthlyRate) + monthlyContribution;
+			if (balance >= target) return m;
+		}
+		return Infinity;
+	}
+
+	interface ChartLayout {
+		html: string;
+		points: { year: number; balance: number }[];
+		padLeft: number;
+		padTop: number;
+		plotW: number;
+		plotH: number;
+		totalYears: number;
+		maxY: number;
+	}
+
+	function buildChart(
+		startBalance: number,
+		monthlyContribution: number,
+		monthlyRate: number,
+		targets: { label: string; amount: number }[],
+	): ChartLayout {
+		const totalYears = 50;
+		const points: { year: number; balance: number }[] = [{ year: 0, balance: startBalance }];
+		let balance = startBalance;
+		for (let m = 1; m <= totalYears * 12; m++) {
+			balance = balance * (1 + monthlyRate) + monthlyContribution;
+			if (m % 12 === 0) points.push({ year: m / 12, balance });
+		}
+
+		const maxTarget = Math.max(...targets.map((t) => t.amount), 1);
+		const maxBalance = Math.max(...points.map((p) => p.balance));
+		const maxY = Math.max(maxTarget, maxBalance) * 1.08;
+
+		const W = 800;
+		const H = 320;
+		const padLeft = 64;
+		const padRight = 16;
+		const padTop = 16;
+		const padBottom = 32;
+		const plotW = W - padLeft - padRight;
+		const plotH = H - padTop - padBottom;
+
+		const xForYear = (y: number) => padLeft + (y / totalYears) * plotW;
+		const yForValue = (v: number) => padTop + plotH - (v / maxY) * plotH;
+
+		let gridLines = '';
+		for (let i = 0; i <= 4; i++) {
+			const v = (maxY * i) / 4;
+			const y = yForValue(v);
+			gridLines += `<line x1="${padLeft}" y1="${y}" x2="${padLeft + plotW}" y2="${y}" stroke="#f0f0f0" />`;
+			gridLines += `<text x="${padLeft - 8}" y="${y + 4}" font-size="11" fill="#777" text-anchor="end">${formatEURCompact(v)}</text>`;
+		}
+
+		let xAxisLabels = '';
+		for (let y = 0; y <= totalYears; y += 10) {
+			const x = xForYear(y);
+			xAxisLabels += `<text x="${x}" y="${padTop + plotH + 20}" font-size="11" fill="#777" text-anchor="middle">${y} a</text>`;
+		}
+
+		let targetLines = '';
+		targets.forEach((t, i) => {
+			const y = yForValue(t.amount);
+			const color = TIER_COLORS[i];
+			targetLines += `<line x1="${padLeft}" y1="${y}" x2="${padLeft + plotW}" y2="${y}" stroke="${color}" stroke-dasharray="4 4" stroke-width="1.5" />`;
+			targetLines += `<text x="${padLeft + plotW}" y="${y - 4}" font-size="11" fill="${color}" text-anchor="end">Tase ${i + 1}</text>`;
+		});
+
+		const linePoints = points.map((p) => `${xForYear(p.year)},${yForValue(p.balance)}`).join(' ');
+
+		const html = `
+			<svg viewBox="0 0 ${W} ${H}" class="fv-chart-svg" role="img" aria-label="Portfelli väärtuse prognoos järgmise 50 aasta jooksul">
+				${gridLines}
+				<line x1="${padLeft}" y1="${padTop}" x2="${padLeft}" y2="${padTop + plotH}" stroke="#ccc" />
+				<line x1="${padLeft}" y1="${padTop + plotH}" x2="${padLeft + plotW}" y2="${padTop + plotH}" stroke="#ccc" />
+				${xAxisLabels}
+				${targetLines}
+				<polyline points="${linePoints}" fill="none" stroke="#111" stroke-width="2.5" />
+				<g class="fv-chart-hover" style="display:none">
+					<line class="fv-hover-line" y1="${padTop}" y2="${padTop + plotH}" stroke="#999" stroke-width="1" stroke-dasharray="3 3" />
+					<circle class="fv-hover-dot" r="4" fill="#111" stroke="#fff" stroke-width="1.5" />
+					<g class="fv-hover-tooltip">
+						<rect class="fv-hover-tooltip-bg" width="128" height="40" rx="4" fill="#111" />
+						<text class="fv-hover-tooltip-year" x="10" y="16" font-size="11" fill="#fff"></text>
+						<text class="fv-hover-tooltip-value" x="10" y="31" font-size="12" font-weight="700" fill="#fff"></text>
+					</g>
+				</g>
+				<rect class="fv-chart-hover-area" x="${padLeft}" y="${padTop}" width="${plotW}" height="${plotH}" fill="transparent" />
+			</svg>
+		`;
+
+		return { html, points, padLeft, padTop, plotW, plotH, totalYears, maxY };
+	}
+
+	function attachChartHover(chartEl: HTMLElement, layout: ChartLayout) {
+		const svg = chartEl.querySelector('svg');
+		const hoverArea = chartEl.querySelector<SVGRectElement>('.fv-chart-hover-area');
+		const hoverGroup = chartEl.querySelector<SVGGElement>('.fv-chart-hover');
+		const hoverLine = chartEl.querySelector<SVGLineElement>('.fv-hover-line');
+		const hoverDot = chartEl.querySelector<SVGCircleElement>('.fv-hover-dot');
+		const tooltip = chartEl.querySelector<SVGGElement>('.fv-hover-tooltip');
+		const tooltipBg = chartEl.querySelector<SVGRectElement>('.fv-hover-tooltip-bg');
+		const tooltipYear = chartEl.querySelector<SVGTextElement>('.fv-hover-tooltip-year');
+		const tooltipValue = chartEl.querySelector<SVGTextElement>('.fv-hover-tooltip-value');
+		if (!svg || !hoverArea || !hoverGroup || !hoverLine || !hoverDot || !tooltip || !tooltipBg || !tooltipYear || !tooltipValue) {
+			return;
+		}
+
+		const { points, padLeft, padTop, plotW, plotH, totalYears, maxY } = layout;
+		const xForYear = (y: number) => padLeft + (y / totalYears) * plotW;
+		const yForValue = (v: number) => padTop + plotH - (v / maxY) * plotH;
+
+		function updateFromClientX(clientX: number) {
+			const rect = svg!.getBoundingClientRect();
+			const viewBox = svg!.viewBox.baseVal;
+			const scaleX = viewBox.width / rect.width;
+			const svgX = (clientX - rect.left) * scaleX;
+
+			let year = ((svgX - padLeft) / plotW) * totalYears;
+			year = Math.max(0, Math.min(totalYears, year));
+
+			const idx0 = Math.floor(year);
+			const idx1 = Math.min(totalYears, idx0 + 1);
+			const p0 = points[idx0];
+			const p1 = points[idx1];
+			const frac = year - idx0;
+			const balance = p0.balance + (p1.balance - p0.balance) * frac;
+
+			const x = xForYear(year);
+			const y = yForValue(balance);
+
+			hoverLine!.setAttribute('x1', String(x));
+			hoverLine!.setAttribute('x2', String(x));
+			hoverDot!.setAttribute('cx', String(x));
+			hoverDot!.setAttribute('cy', String(y));
+
+			tooltipYear!.textContent = `${year.toFixed(1)} a pärast`;
+			tooltipValue!.textContent = formatEUR(balance);
+
+			const tooltipW = 128;
+			const tooltipH = 40;
+			const flipLeft = x + 12 + tooltipW > padLeft + plotW;
+			const tooltipX = flipLeft ? x - 12 - tooltipW : x + 12;
+			const tooltipY = Math.max(padTop, Math.min(y - tooltipH / 2, padTop + plotH - tooltipH));
+			tooltip!.setAttribute('transform', `translate(${tooltipX}, ${tooltipY})`);
+
+			hoverGroup!.style.display = '';
+		}
+
+		hoverArea.addEventListener('pointermove', (e) => updateFromClientX(e.clientX));
+		hoverArea.addEventListener('pointerdown', (e) => updateFromClientX(e.clientX));
+		hoverArea.addEventListener('pointerleave', () => {
+			hoverGroup!.style.display = 'none';
+		});
+	}
+
+	function calculate() {
+		const portfolio = parseFloat((document.getElementById('fv-portfolio') as HTMLInputElement).value) || 0;
+		const monthly = parseFloat((document.getElementById('fv-monthly') as HTMLInputElement).value) || 0;
+		const returnPct = parseFloat((document.getElementById('fv-return') as HTMLInputElement).value) || 0;
+		const inflationPct = parseFloat((document.getElementById('fv-inflation') as HTMLInputElement).value) || 0;
+		const essential = parseFloat((document.getElementById('fv-essential') as HTMLInputElement).value) || 0;
+		const allCosts = parseFloat((document.getElementById('fv-all') as HTMLInputElement).value) || 0;
+
+		const realAnnualRate = (1 + returnPct / 100) / (1 + inflationPct / 100) - 1;
+		const realMonthlyRate = Math.pow(1 + realAnnualRate, 1 / 12) - 1;
+
+		const targets = [
+			{
+				label: 'Finantsstabiilsus',
+				description: '6 kuu kõik kulud (turvapadi)',
+				amount: allCosts * 6,
+			},
+			{
+				label: 'Finantssõltumatus',
+				description: 'portfell katab põhikulud (4% reegel)',
+				amount: essential * 12 * 25,
+			},
+			{
+				label: 'Täielik finantsvabadus',
+				description: 'portfell katab kõik kulud (4% reegel)',
+				amount: allCosts * 12 * 25,
+			},
+		];
+
+		const resultsEl = document.getElementById('fv-results');
+		if (resultsEl) {
+			resultsEl.innerHTML = targets
+				.map((target, i) => {
+					const months = monthsUntilTarget(portfolio, monthly, realMonthlyRate, target.amount);
+					const { time, year } = monthsToYearsText(months);
+					return `
+						<div class="fv-result-card" style="--fv-tier-color: ${TIER_COLORS[i]}">
+							<strong class="fv-label">${target.label}</strong>
+							<dl>
+								<div class="fv-detail-row">
+									<dt>Sihtsumma</dt>
+									<dd>${formatEUR(target.amount)}</dd>
+								</div>
+								<div class="fv-detail-row">
+									<dt>Kirjeldus</dt>
+									<dd>${target.description}</dd>
+								</div>
+								<div class="fv-detail-row fv-detail-highlight">
+									<dt>Aega vaja</dt>
+									<dd>${time}</dd>
+								</div>
+								${year ? `<div class="fv-detail-row"><dt>Aasta</dt><dd>${year}</dd></div>` : ''}
+							</dl>
+						</div>
+					`;
+				})
+				.join('');
+		}
+
+		const chartEl = document.getElementById('fv-chart');
+		if (chartEl) {
+			const layout = buildChart(portfolio, monthly, realMonthlyRate, targets);
+			chartEl.innerHTML = layout.html;
+			attachChartHover(chartEl, layout);
+		}
+	}
+
+	const calcRoot = document.querySelector('.fv-calc');
+	if (calcRoot) {
+		calcRoot.querySelectorAll('input').forEach((input) => {
+			input.addEventListener('input', calculate);
+		});
+		calculate();
+	}
+</script>

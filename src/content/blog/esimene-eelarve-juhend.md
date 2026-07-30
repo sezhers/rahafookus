@@ -7,7 +7,7 @@ faq:
   - question: "Kas eelarve koostamiseks on vaja kallist tarkvara?"
     answer: "Ei. Enamik inimesi saab suurepäraselt hakkama lihtsa tabeliga (nt Google Sheets või Excel) või isegi paberil peetava ülevaatega. Oluline on järjepidevus, mitte tööriista keerukus."
   - question: "Kui tihti peaksin oma eelarvet üle vaatama?"
-    answer: "Alguses tasub kulusid jälgida iganädalaselt, et harjuda ülevaate pidamisega. Kui eelarve on juba paika loksunud, piisab enamasti igakuisest ülevaatamisest, koos suurema ülevaatega paar korda aastas."
+    answer: "Alguses tasub kulusid jälgida iganädalaselt, et harjuda ülevaate pidamisega. Kui eelarve on juba paika loksunud, piisab enamasti igakuisest üle vaatamisest, koos suurema ülevaatega paar korda aastas."
   - question: "Mida teha, kui minu kulud ületavad pidevalt sissetulekut?"
     answer: "Vaata esmalt läbi suurimad kulukategooriad (nt eluase, transport, toit) — sageli on seal suurim kokkuhoiuvõimalus, mitte väikestes igapäevastes ostudes. Kui suuremaid kulusid pole võimalik kärpida, tasub kaaluda ka sissetuleku suurendamise võimalusi."
   - question: "Kas eelarve peab olema väga täpne, sentideni?"
@@ -25,6 +25,7 @@ Kirjuta üles kõik regulaarsed sissetulekud — palk, lisatöö tulu, toetused 
 Vaata läbi viimase 2–3 kuu pangaväljavõtted ja jaga kulud kategooriatesse, näiteks:
 
 - eluase (üür/laen, kommunaalkulud),
+- pikaajalised kohustused (näiteks, kui sul on võetud liising või tarbimislaen),
 - toit,
 - transport,
 - kindlustus,
@@ -33,7 +34,7 @@ Vaata läbi viimase 2–3 kuu pangaväljavõtted ja jaga kulud kategooriatesse, 
 
 ## Samm 3: võrdle sissetulekut ja kulusid
 
-Kui sissetulek ületab kulusid, on sul olemas ruumi säästmiseks ja eesmärkide poole liikumiseks. Kui kulud ületavad sissetulekut, tuleb leida kategooriad, kus on realistlik kärpida.
+Kui sissetulek ületab kulusid, on sul olemas ruumi säästmiseks ja eesmärkide poole liikumiseks. Kui kulud ületavad sissetulekut, tuleb leida kategooriad, kus on realistlik kärpida. Või siis töötada sissetuleku suurendamise nimel.
 
 ## Samm 4: sea igale kategooriale mõistlik piir
 
