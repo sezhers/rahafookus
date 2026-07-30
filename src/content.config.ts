@@ -24,6 +24,16 @@ const blog = defineCollection({
 			]),
 			// Valikuline — kui postitusel puudub, kasutame layoutis vaikimisi "sergei".
 			author: z.string().optional(),
+			// Valikuline KKK-plokk — renderdatakse postituse lõppu ja kasutatakse
+			// FAQPage structured data (JSON-LD) genereerimiseks.
+			faq: z
+				.array(
+					z.object({
+						question: z.string(),
+						answer: z.string(),
+					}),
+				)
+				.optional(),
 		}),
 });
 
