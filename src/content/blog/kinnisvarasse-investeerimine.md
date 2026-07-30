@@ -10,7 +10,7 @@ Kinnisvara on Eestis üks populaarsemaid investeerimisviise — paljud alustavad
 ## Levinumad viisid kinnisvarasse investeerimiseks
 
 1. **Otseinvesteering (füüsilise korteri või maja ostmine üürimiseks).** Kõige tuntum, kuid ka kõige kapitalimahukam ja aeganõudvam viis — nõuab tavaliselt sissemakset, laenu, üürnike leidmist ja objekti haldamist.
-2. **Kinnisvarafondid.** Fondid koguvad mitme investori raha ja investeerivad selle kinnisvaraobjektidesse (nt äripinnad, korterelamud). See võimaldab osaleda kinnisvaraturul väiksema kapitali ja väiksema halduskoormusega kui otseinvesteering.
+2. **Kinnisvarafondid.** Fondid koguvad mitme investori raha ja investeerivad selle kinnisvaraobjektidesse (nt äripinnad, korterelamud). See võimaldab osaleda kinnisvaraturul väiksema kapitali ja väiksema halduskoormusega kui otseinvesteering. Eestis on üks tuntumaid fondidega seotud nimesid - EFTEN.
 3. **Kinnisvara ühisrahastus.** Platvormid, mis võimaldavad investeerida väiksemate summadega konkreetsetesse kinnisvaraprojektidesse (arendusprojektid, laenud kinnisvaraga tagatud). Sellest räägime pikemalt eraldi artiklis ühisrahastuse kohta.
 4. **Kinnisvaraga seotud aktsiad või REIT-id.** Börsil noteeritud ettevõtted, mis tegelevad kinnisvara arendamise, omamise või haldamisega — annavad kinnisvaraturule ligipääsu aktsia ostmise lihtsusega.
 
@@ -19,13 +19,15 @@ Kinnisvara on Eestis üks populaarsemaid investeerimisviise — paljud alustavad
 Mõned investorid kaaluvad üürikorteri omamist ja haldamist ettevõtte (nt OÜ) kaudu, mitte eraisikuna. Sellel on nii eeliseid kui puudusi:
 
 **Võimalikud eelised:**
-- Ettevõtte kaudu tegutsedes maksustatakse kasumit alles selle väljavõtmisel (dividendina), mitte jooksvalt teenitud üüritulult — see võib pikaajalisel reinvesteerimisel olla maksuefektiivsem.
+- Ettevõtte kaudu tegutsedes maksustatakse kasumit alles selle väljavõtmisel (dividendina või palgana), mitte jooksvalt teenitud üüritulult — see võib pikaajalisel reinvesteerimisel olla maksuefektiivsem.
 - Lihtsam mitme objekti haldamine ja raamatupidamise korraldamine ühtse struktuuri all.
+- Saab kõik tehtud kulutused maha kirjutada.
 
 **Võimalikud puudused:**
 - Ettevõtte asutamise ja pidamisega kaasnevad lisakulud (raamatupidamine, aastaaruanded).
 - Eraisikuna üüritulu teenimisel on ka lihtsamaid maksusoodustuste võimalusi (nt eluasemelaenu intresside mahaarvamine teatud tingimustel varasematel aastatel kehtinud reeglite kohaselt — kehtivad reeglid tasub üle kontrollida Maksu- ja Tolliameti kodulehelt).
 - Ettevõtte kaudu omandatud kinnisvara müük või erakasutusse võtmine võib kaasa tuua täiendavaid maksukohustusi.
+- Kinnisvaralaenu tingimused tihti karmimad ning ettevõttel on vaja näidata rahavoogu juba enne laenu taotlemist.
 
 Kuna õige struktuur sõltub konkreetsest olukorrast (tulude suurus, plaanid objektide arvu kasvatada, pikaajaline eesmärk), tasub suurema otsuse ees kaaluda konsultatsiooni raamatupidaja või maksunõustajaga.
 
@@ -35,6 +37,7 @@ Kuna õige struktuur sõltub konkreetsest olukorrast (tulude suurus, plaanid obj
 - **Kontsentratsioonirisk.** Üks kinnisvaraobjekt moodustab tavaliselt suure osa investori varast, mis tähendab suuremat riski, kui just selle objekti või piirkonna turg peaks halvenema.
 - **Lisakulud.** Hooldus, remont, kindlustus, halduskulud ja tühjad perioodid (kui korter ei ole üüritud) vähendavad tegelikku tootlust võrreldes pealtnäha lihtsa "üürihinna jagatud ostuhinnaga" arvutusega.
 - **Laenuvõimendus.** Kui kasutad kinnisvara ostuks laenu, võimendab see nii võimalikku tootlust kui ka kaotust, kui kinnisvara hind peaks langema.
+- **Probleemne üürnik.** Üks probleemne üürnik võib halvemal juhul tähendada mõne kuu või isegi 1-2 aasta üüri kaotust.
 
 ## Kokkuvõte
 
