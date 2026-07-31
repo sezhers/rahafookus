@@ -46,7 +46,7 @@ Tähtajaline hoius sobib hästi:
 - neile, kes soovivad garanteeritud (mitte turust sõltuvat) tootlust;
 - turvapadja osale, mida ei soovi hoida täiesti tootluseta arvelduskontol.
 
-See ei sobi hästi rahale, mida võid vajada ootamatult — sel juhul on parem valik paindlikum kogumiskonto või arvelduskonto.
+See ei sobi hästi rahale, mida võid vajada ootamatult — sel juhul on parem valik paindlikum kogumishoius või tavaline arvelduskonto.
 
 ## Kokkuvõte
 

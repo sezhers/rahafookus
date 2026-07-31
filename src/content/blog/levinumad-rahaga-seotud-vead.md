@@ -5,9 +5,9 @@ pubDate: "2026-08-04"
 category: "rahatarkus"
 faq:
   - question: "Kas ühekordne rahaline viga (nt üks hilinenud arve) on tõsine probleem?"
-    answer: "Üksik juhtum ei ole enamasti kriitiline, kui sellest õpitakse ja käitumist parandatakse. Probleemiks muutuvad pigem korduvad mustrid, näiteks pidev üle jõu käiv kulutamine või turvapadi loomise pidev edasilükkamine."
-  - question: "Miks on turvapadi puudumine nii levinud viga?"
-    answer: "Turvapadi tundub sageli vähem \"kiireloomuline\" kui teised kulud või eesmärgid, mistõttu selle loomist lükatakse pidevalt edasi. Probleem ilmneb alles siis, kui tuleb ootamatu kulu, ja tagajärjeks on sageli kallis laen."
+    answer: "Üksik juhtum ei ole enamasti kriitiline, kui sellest õpitakse ja käitumist parandatakse. Probleemiks muutuvad pigem korduvad mustrid, näiteks pidev üle jõu käiv kulutamine või turvapadja loomise pidev edasilükkamine."
+  - question: "Miks on turvapadja puudumine nii levinud viga?"
+    answer: "Turvapadi tundub sageli vähem \"kiireloomuline\" kui teised kulud või eesmärgid, mistõttu selle loomist lükatakse pidevalt edasi. Probleem ilmneb alles siis, kui tuleb ootamatu kulu, ja selle tagajärjeks on sageli kõrge protsendiga ehk kallis laen."
   - question: "Kas eelarve koostamata jätmine on tõesti nii suur viga?"
     answer: "Eelarve puudumine ei tähenda automaatselt probleemi, kuid raskendab oluliselt märkamist, kui kulutused hakkavad sissetulekust suuremaks kasvama. Isegi lihtne igakuine ülevaade aitab paljusid teisi vigu varakult märgata."
   - question: "Kuidas ma saan teada, kas teen mõnda neist vigadest?"
@@ -20,7 +20,7 @@ Enamik rahaasjadega seotud probleeme ei teki ühe suure vale otsuse, vaid mõne 
 
 Ilma selge ülevaateta sissetulekust ja kuludest on lihtne kulutada rohkem, kui arvad. Isegi lihtne igakuine ülevaade aitab avastada, kuhu raha tegelikult kulub.
 
-## 2. Turvapadi loomise edasilükkamine
+## 2. Turvapadja loomise edasilükkamine
 
 Ootamatud kulud tulevad varem või hiljem. Ilma puhvrita muutuvad need tihti kalliks tarbimislaenuks või krediitkaardivõlaks, selle asemel et olla lihtsalt planeeritud kulu.
 
@@ -30,7 +30,7 @@ Krediitkaardi või muu võla puhul ainult miinimumi tasumine jätab suure osa su
 
 ## 4. Emotsionaalsed rahalised otsused
 
-Impulssostud, paanikas müümine languse ajal või sotsiaalsest survest tulenevad kulutused (nn "keeping up with the Joneses") võivad kokkuvõttes maksma minna palju rohkem kui algselt planeeritud.
+Impulssostud, paanikas investeeringute müümine languse ajal või sotsiaalsest survest tulenevad kulutused (nn "keeping up with the Joneses") võivad kokkuvõttes maksma minna palju rohkem kui algselt planeeritud.
 
 ## 5. Investeerimise ja säästmise edasilükkamine "parema hetkeni"
 
@@ -46,6 +46,6 @@ Enamik neist vigadest ei nõua keerukat lahendust — piisab lihtsast igakuisest
 
 ## Kokkuvõte
 
-Rahaga seotud vead on enamasti mustrid, mitte ühekordsed juhtumid — ja mustreid on alati võimalik muuta. Väike teadlikkus ja mõned lihtsad harjumused aitavad vältida suurt osa levinumatest algaja vigadest.
+Rahaga seotud vead on enamasti mustrid, mitte ühekordsed juhtumid — ja mustreid on alati võimalik muuta. Mingisugunegi teadlikkus ja mõned lihtsad harjumused aitavad vältida suurt osa levinumatest algaja vigadest.
 
 *See artikkel on loodud informatiivsel ja hariduslikul eesmärgil ega ole personaalne finantsnõu.*

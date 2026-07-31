@@ -8,7 +8,7 @@ faq:
     answer: "Juba 4–5-aastasele saab õpetada põhitõdesid, näiteks et raha tuleb töö või tulu eest ja et sellega saab valida, mida osta. Vanusele vastavalt saab keerukust järk-järgult suurendada."
   - question: "Kas taskuraha andmine on hea viis rahatarkust õpetada?"
     answer: "Jah, kui sellega kaasneb ka valikuvabadus ja vastutus — laps peab ise otsustama, kas kulutada kohe või säästa millegi suurema jaoks. Ilma valiku ja tagajärgedeta jääb taskuraha lihtsalt tasuta rahaks."
-  - question: "Kas peaksin last iga töö eest tasuma?"
+  - question: "Kas peaksin lapsele iga töö eest tasuma?"
     answer: "Enamik peresid eristab igapäevaseid kodukohustusi (mis on osa pere toimimisest) ja lisaülesandeid (mille eest võib maksta). Kõige eest tasumine võib anda lapsele mulje, et miski ei ole tehtav ilma rahalise tasuta."
   - question: "Kuidas õpetada last säästma, kui ta tahab kõike kohe?"
     answer: "Aita lapsel seada konkreetne ja nähtav eesmärk (nt visuaalne säästupurk või lihtne nimekiri), et ta näeks progressi. Kohese rahulolu edasilükkamine on oskus, mida on lihtsam õppida, kui eesmärk on selge ja käega katsutav."

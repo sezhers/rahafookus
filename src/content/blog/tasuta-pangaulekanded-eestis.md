@@ -11,7 +11,7 @@ faq:
   - question: "Miks võtab mõni ülekanne kauem aega kui teine?"
     answer: "Tavalised SEPA-ülekanded jõuavad tavaliselt kohale samal või järgmisel tööpäeval, samas kui kiirülekanded (nt hetkülekanded) jõuavad kohale sekunditega, kuid võivad olla kallimad. Väljaspool SEPA-piirkonda tehtavad ülekanded võtavad tavaliselt kauem aega ja on kulukamad."
   - question: "Kas ülekanded muusse valuutasse peale euro on kallimad?"
-    answer: "Tavaliselt jah. Valuutavahetusega kaasnevad lisatasud ja vahetuskursi marginaal, mistõttu tasub enne suuremat välismaist ülekannet võrrelda erinevate teenusepakkujate (sh panga ja spetsialiseeritud maksetjenuste) tingimusi."
+    answer: "Tavaliselt jah. Valuutavahetusega kaasnevad lisatasud ja vahetuskursi marginaal, mistõttu tasub enne suuremat välismaist ülekannet võrrelda erinevate teenusepakkujate (sh panga ja spetsialiseeritud makseteenuste) tingimusi."
 ---
 
 Igapäevaste pangaülekannete tasud võivad aastate lõikes kokku kasvada üllatavalt suureks summaks — õnneks on enamik lahendusi Eestis tänapäeval kas tasuta või väga soodsad, kui tead, mida valida.
@@ -22,20 +22,20 @@ Eesti ja teised Euroopa Liidu riigid kuuluvad ühtsesse eurodes tehtavate makset
 
 ## Millal võivad tasud siiski tekkida
 
-- **Kiirülekanded (hetkülekanded).** Kui vajad, et raha jõuaks kohale sekunditega, mitte tavapärase 1 tööpäeva jooksul, võib see olla tasuline lisateenus.
+- **Kiirülekanded (hetkülekanded).** Kui vajad, et raha jõuaks kohale sekunditega, mitte tavapärase 1 tööpäeva jooksul, võib see olla tasuline lisateenus. Enamikes Eesti pankades on nn välkkanded ikkagi tasuta.
 - **Ülekanded väljaspool SEPA-piirkonda.** Näiteks USA dollarites tehtavad maksed või ülekanded väljapoole Euroopat toovad tavaliselt kaasa lisatasu ja valuutavahetuse kulu.
-- **Teatud kontopaketid.** Mõned baaskontod võivad piirata tasuta ülekannete arvu kuus.
+- **Teatud kontopaketid.** Mõned baaskontod võivad piirata tasuta ülekannete arvu kuus, osad pangad pakuvad eraldi kuutasuga pakette, kus on pangaülekanded tasuta.
 - **Sularaha ja kaardimaksed rahvusvaheliselt.** Need on eraldiseisev teema — tasub kontrollida oma panga tingimusi rahvusvahelise kaardikasutuse kohta.
 
 ## Kuidas hoida ülekandekulusid madalal
 
-1. **Kasuta tavalist SEPA-ülekannet,** kui kiirus pole kriitiline — enamasti jõuab raha kohale juba järgmisel tööpäeval.
+1. **Kasuta tavalist SEPA-ülekannet,** kui kiirus pole kriitiline — enamasti jõuab raha kohale juba samal või hilisemalt järgmisel tööpäeval.
 2. **Kontrolli oma kontopaketi tingimusi,** et teada, kas ja mitu tasuta ülekannet kuus sisaldub.
 3. **Suuremate välismaiste maksete puhul võrdle pakkujaid,** sest vahetuskursi marginaal võib olla suurem kulu kui nähtav "tasu".
 4. **Väldi kiirülekannet,** kui tavaline ülekanne jõuab samuti õigeks ajaks kohale.
 
 ## Kokkuvõte
 
-Enamik igapäevaseid ülekandeid Eestis ja Euroopa Liidus on tänu SEPA süsteemile tasuta või väga soodsad. Lisatasud tekivad peamiselt kiiruse (hetkülekanded) või rahvusvahelisuse (valuutavahetus, väljaspool SEPA-d) tõttu — neid teades saad valida iga olukorra jaoks kõige mõistlikuma variandi.
+Enamik igapäevaseid ülekandeid Eestis ja Euroopa Liidus on tänu SEPA süsteemile tasuta või väga soodsad ning liiguvad suhteliselt kiiresti. Lisatasud tekivad peamiselt kiiruse (hetkülekanded) või rahvusvahelisuse (valuutavahetus, väljaspool SEPA-d) tõttu — neid teades saad valida iga olukorra jaoks kõige mõistlikuma variandi.
 
 *See artikkel on loodud informatiivsel eesmärgil ega ole personaalne finantsnõu. Konkreetsed tasud ja tingimused sõltuvad pangast ja kontopaketist ning võivad ajas muutuda.*
