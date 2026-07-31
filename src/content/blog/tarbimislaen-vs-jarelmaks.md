@@ -5,7 +5,7 @@ pubDate: "2026-07-31"
 category: "laenud-ja-krediit"
 faq:
   - question: "Kas järelmaks on alati odavam kui tarbimislaen?"
-    answer: "Ei alati. Paljud kaupmehed pakuvad lühiajalist intressivaba järelmaksu, kuid pikema perioodi peale võivad lisanduda haldustasud või kõrgem intress, mis muudavad selle tarbimislaenust kallimaks. Tasub alati vaadata krediidi kulukuse määra (KKM), mitte ainult intressiprotsenti."
+    answer: "Ei, mitte alati. Paljud kaupmehed pakuvad lühiajalist intressivaba järelmaksu, kuid pikema perioodi peale võivad lisanduda haldustasud või kõrgem intress, mis muudavad selle tarbimislaenust kallimaks. Tasub alati vaadata krediidi kulukuse määra (KKM), mitte ainult intressiprotsenti."
   - question: "Kas järelmaks mõjutab minu krediidiajalugu samamoodi nagu tarbimislaen?"
     answer: "Jah, ka järelmaks on krediiditoode ja kajastub üldjuhul samamoodi maksekäitumise ajaloos. Hilinenud maksed järelmaksu puhul võivad mõjutada tulevast krediidivõimekust täpselt nagu tarbimislaenu puhul."
   - question: "Kas tarbimislaenu saab kasutada suvalise kulu jaoks?"

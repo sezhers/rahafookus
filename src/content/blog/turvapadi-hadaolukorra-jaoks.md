@@ -5,9 +5,9 @@ pubDate: "2026-08-03"
 category: "saastmine-ja-eelarve"
 faq:
   - question: "Mitme kuu elamiskulud peaksin turvapadjas hoidma?"
-    answer: "Levinud soovitus on 3–6 kuu elamiskulude ulatuses, kuid täpne summa sõltub sinu olukorrast — näiteks ebastabiilsema sissetuleku (nt ettevõtlus, tükitöö) korral võib mõistlik olla suurem puhver, stabiilse sissetuleku korral piisab sageli väiksemast."
+    answer: "Levinud soovitus on 3–6 kuu elamiskulude ulatuses, kuid täpne summa sõltub sinu olukorrast — näiteks ebastabiilsema sissetuleku (nt ettevõtlus, tükitöö) korral võib mõistlikum olla suurem puhver, stabiilse sissetuleku korral piisab sageli väiksemast."
   - question: "Kus peaks turvapadjas olevat raha hoidma?"
-    answer: "Turvapadi peaks olema kergesti kättesaadav ja madala riskiga — näiteks tavalisel arvelduskontol või kõrge likviidsusega säästukontol, mitte aktsiaturul või muudes kõikuva väärtusega instrumentides."
+    answer: "Turvapadi peaks olema kergesti kättesaadav ja madala riskiga — näiteks tavalisel arvelduskontol või kõrge likviidsusega säästukontol, mitte aktsiaturul või muudes kõikuva väärtusega instrumentides. Võib olla sobiks ka tähtajaline hoius, kus sa roteerid oma turvapadja summat mitme erineva algus- ja lõpptähtajaga."
   - question: "Kas turvapadja loomine ja investeerimine peaksid toimuma korraga?"
     answer: "Enamasti on mõistlik luua vähemalt algne turvapadi enne suuremate summade investeerimist, kuna investeeringute väärtus võib lühiajaliselt kõikuda ja hädaolukorras nende müümine halval hetkel võib tähendada kahjumit."
   - question: "Mis loetakse \"hädaolukorraks\", mille jaoks turvapatja kasutada?"
@@ -24,9 +24,9 @@ Ilma puhvrita muutub iga ootamatu kulu (auto remont, tervisega seotud väljamine
 
 Levinud lähtepunkt on 3–6 kuu elamiskulude ulatuses raha, kuid sobiv suurus sõltub sinu olukorrast:
 
-- **Stabiilne sissetulek (nt pikaajaline tööleping).** Sageli piisab väiksemast puhvrist, näiteks 3 kuu kulude ulatuses.
+- **Stabiilne sissetulek ja madal töötuse risk (nt pikaajaline tööleping).** Sageli piisab väiksemast puhvrist, näiteks 3 kuu kulude ulatuses.
 - **Ebastabiilne või hooajaline sissetulek.** Mõistlik on kaaluda suuremat puhvrit, näiteks 6 kuud või rohkem.
-- **Ülalpeetavad või suuremad kohustused.** Suurem pere või kõrgemad püsikulud võivad samuti õigustada suuremat turvapatja.
+- **Ülalpeetavad või suuremad kohustused.** Suurem pere, halvemas seisus elukoht ja auto või kõrgemad püsikulud võivad samuti õigustada suuremat turvapatja.
 
 ## Kuhu turvapadja raha paigutada
 

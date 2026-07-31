@@ -19,24 +19,24 @@ faq:
 ## Mobiilipanganduse eelised
 
 - **Kättesaadavus.** Ülekanded, arvete tasumine ja saldo kontroll on võimalikud igal ajal ja igast kohast.
-- **Kiirus.** Enamik toiminguid, mis harukontoris võtaksid aega, saab mobiilirakenduses teha minutitega.
+- **Kiirus.** Enamik toiminguid, mis harukontoris võtaksid aega, saab mobiilirakenduses teha sekundite või minutitega.
 - **Ülevaade.** Paljud rakendused pakuvad kulude kategoriseerimist ja graafikuid, mis aitavad oma rahaasjadel silma peal hoida.
 
 ## Kus traditsiooniline pangandus endiselt kohta leiab
 
 - **Keerukamad nõustamisvajadused,** näiteks kodulaenu tingimuste läbirääkimine või investeerimisnõustamine.
-- **Vähem digioskustega inimesed,** kellele isiklik teenindus annab suurema kindlustunde.
+- **Vähemate digioskustega inimesed,** kellele isiklik teenindus annab suurema kindlustunde.
 - **Konkreetsed dokumendid ja allkirjad,** mida seadus või sisemine protsess nõuab füüsilisel kujul või notari juures.
 
 ## Turvalisuse põhitõed mobiilipanganduses
 
 1. **Kasuta ainult ametlikku panga rakendust,** mille oled laadinud ametlikust rakenduste poest.
 2. **Ära jaga kunagi koode ega paroole,** isegi kui helistaja väidab end olevat panga töötaja.
-3. **Kasuta seadme enda turvafunktsioone** (ekraanilukk, sõrmejälg või näotuvastus) lisaks panga enda kaitsemehhanismidele.
-4. **Jälgi regulaarselt oma tehingute ajalugu,** et märgata kiiresti võimalikke kahtlaseid tehinguid.
+3. **Kasuta seadme enda turvafunktsioone** (ekraanilukk, sõrmejälg või näotuvastus) lisaks pangaäpi kaitsemehhanismidele.
+4. **Jälgi regulaarselt oma tehingute ajalugu,** et märgata kiiresti võimalikke kahtlaseid tehinguid. Lülita sisse teavitused kontol tehtavatest tehingutest.
 
 ## Kokkuvõte
 
 Mobiilipank sobib suurepäraselt igapäevaseks arveldamiseks ja kiireks ülevaateks, samas kui traditsiooniline pangandus on endiselt oma koht keerukamate teemade ja isikliku nõustamise juures. Enamik inimesi kasutab tänapäeval mõlemat — vastavalt olukorrale ja isiklikule mugavusele.
 
-*See artikkel on loodud informatiivsel eesmärgil ega ole personaalne finantsnõu. Konkreetsed rakenduse funktsioonid ja turvalahendused erinevad panguti.*
+*See artikkel on loodud informatiivsel eesmärgil ega ole personaalne finantsnõu. Konkreetsed rakenduse funktsioonid ja turvalahendused erinevad igas pangaöpis.*

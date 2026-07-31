@@ -7,7 +7,7 @@ faq:
   - question: "Kas ma pean kasutama ainult ühte panka?"
     answer: "Ei. Paljud inimesed kasutavad ühte panka igapäevaseks arveldamiseks ja teist näiteks säästude hoidmiseks või soodsamate ülekannete jaoks. Mitme konto haldamine nõuab veidi rohkem organiseeritust, kuid võib tuua kokkuhoidu või mugavust."
   - question: "Kas suur pank on alati parem kui väiksem või digitaalne pakkuja?"
-    answer: "Mitte tingimata. Suurematel pankadel on tavaliselt laiem harukontorite võrgustik ja tuttavam teenindus, samas kui digitaalsed pakkujad võivad pakkuda soodsamaid tasusid või mugavamat rahvusvahelist kasutust. Parim valik sõltub sinu enda vajadustest."
+    answer: "Mitte ilmtingimata. Suurematel pankadel on tavaliselt laiem harukontorite võrgustik ja tuttavam teenindus, samas kui digitaalsed pakkujad võivad pakkuda soodsamaid tasusid või mugavamat rahvusvahelist kasutust. Parim valik sõltub sinu enda vajadustest."
   - question: "Millele peaksin panga valimisel kõige rohkem tähelepanu pöörama?"
     answer: "Igakuised kontohooldustasud, ülekannete (sh välismaale) tasud, kaardi väljastamise ja kasutamise tingimused ning mobiilipanga kasutusmugavus on kõige levinumad kriteeriumid, mille põhjal algajad panka valivad."
   - question: "Kas panga vahetamine on keeruline?"
@@ -19,9 +19,9 @@ Panga valik mõjutab sinu igapäevaseid rahaasju rohkem, kui esmapilgul tundub �
 ## Mida panga valimisel kaaluda
 
 - **Tasud.** Kontohooldus, kaarditasu, sularaha väljavõtmine ja ülekanded (eriti välismaale) võivad pankade lõikes erineda.
-- **Digilahendused.** Kui suur osa oma pangaasjadest soovid teha mobiilirakenduses, tasub testida panga äppi enne kontot avamist.
+- **Digilahendused.** Kui suur osa oma pangaasjadest soovid teha mobiilirakenduses, tasub testida panga äppi enne konto avamist.
 - **Teenindus.** Kas eelistad harukontoris käimist või piisab sulle täielikult veebipõhisest teenindusest?
-- **Lisateenused.** Investeerimisvõimalused, säästukontod, kindlustus või muud tooted, mida ehk hiljem vajad.
+- **Lisateenused.** Investeerimisvõimalused, säästukontod, kindlustus või muud tooted, mida võid hiljem vajada.
 
 ## Traditsiooniline pank vs. digipank
 
@@ -33,7 +33,8 @@ Paljud inimesed jagavad oma rahaasjad teadlikult mitme panga vahel:
 
 1. **Peamine arvelduskonto** igapäevaste kulude ja püsimaksete jaoks.
 2. **Eraldi säästukonto** teises pangas, et vältida kiusatust igapäevaraha säästudega segi ajada.
-3. **Rahvusvaheliste ülekannete jaoks sobiv konto**, kui teed regulaarselt makseid välismaale.
+3. **Investeerimiskonto** teises pangas juhul, kui põhipank ei toeta kõiki vajalikke teenuseid.
+4. **Rahvusvaheliste ülekannete jaoks sobiv konto**, kui teed regulaarselt makseid välismaale.
 
 ## Kokkuvõte
 

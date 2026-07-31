@@ -7,7 +7,7 @@ faq:
   - question: "Kust peaks rahatarkuse õppimist alustama, kui tunnen end täiesti algajana?"
     answer: "Alusta kõige elementaarsemast — pane paika, kui palju sa teenid ja kulutad, ning ehita sellele üles lihtne eelarve. Kõik keerukamad teemad (säästmine, investeerimine, laenud) muutuvad palju lihtsamaks, kui see põhi on juba selge."
   - question: "Kas rahatarkus tähendab, et pean saama iga kuu rohkem säästa?"
-    answer: "Mitte tingimata. Rahatarkus tähendab eelkõige teadlikke valikuid — mõnel eluetapil võib mõistlik olla kulutada rohkem (nt hariduseks või tervisele), teisel aga säästa agressiivsemalt. Oluline on, et otsused oleksid teadlikud, mitte juhuslikud."
+    answer: "Mitte ilmtingimata. Rahatarkus tähendab eelkõige teadlikke valikuid — mõnel eluetapil võib mõistlik olla kulutada rohkem (nt hariduseks või tervisele), teisel aga säästa agressiivsemalt. Oluline on, et otsused oleksid teadlikud, mitte juhuslikud."
   - question: "Kas rahatarkus on rohkem numbrite või harjumuste teema?"
     answer: "Mõlemat, kuid harjumused on sageli olulisemad. Isegi lihtne, kuid järjepidevalt rakendatud põhimõte (nt automaatne säästmine) toob pikas perspektiivis rohkem kasu kui keerukas, kuid ebajärjekindlalt järgitav plaan."
   - question: "Kas rahatarkust on kunagi hilja õppida?"
@@ -20,7 +20,7 @@ Rahatarkus ei tähenda keerulisi valemeid ega finantsžargooni — see on eelkõ
 
 1. **Tea, kui palju sa teenid ja kulutad.** Ilma selge ülevaateta on kõik muu planeerimine juhuslik.
 2. **Kuluta vähem, kui teenid.** See lihtne põhimõte on aluseks igasugusele säästmisele ja investeerimisele.
-3. **Loo endale turvapadi.** Ootamatud kulud tulevad varem või hiljem — puhver hoiab need stressivabaks.
+3. **Loo endale turvapadi.** Ootamatud kulud tulevad varem või hiljem — puhver muudab need stressivabaks.
 4. **Väldi kõrge intressiga võlga.** Krediitkaardi- või tarbimislaenuvõlg kasvab kiiresti, kui seda pikalt tasumata jätta.
 5. **Mõista liitintressi.** Nii säästmisel kui laenamisel töötab liitintress sinu poolt või sinu vastu — sõltuvalt sellest, kummal pool sa oled.
 6. **Sea endale konkreetsed rahalised eesmärgid.** "Tahaksin rohkem säästa" on raskem saavutada kui "tahan koguda 3 kuu elamiskulud aasta jooksul".

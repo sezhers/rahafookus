@@ -34,11 +34,11 @@ Mõlemad võivad jälgida sama indeksit — erinevus on peamiselt selles, kuidas
 - **Kulumäär (TER).** Isegi väike erinevus (nt 0,1% vs. 0,5% aastas) mõjutab aastate lõikes tootlust märgatavalt tänu liitintressi efektile.
 - **Milline indeks.** Mõni fond jälgib ainult üht riiki või sektorit (suurem risk, väiksem hajutatus), teine aga laia globaalset indeksit.
 - **Fondi suurus ja likviidsus.** Suuremad ja likviidsemad fondid on üldjuhul stabiilsemad ja kergemini kaubeldavad.
-- **Valuuta ja maksustamine.** Fondi baasvaluuta ja selle jurisdiktsioon (nt Iirimaa või Luksemburg registreeritud fondid) võivad mõjutada, kuidas dividendid ja müügikasum sinu jaoks maksustatakse.
+- **Valuuta ja maksustamine.** Fondi baasvaluuta ja selle jurisdiktsioon (nt Iirimaal või Luksemburgis registreeritud fondid) võivad mõjutada, kuidas dividendid ja müügikasum sinu jaoks maksustatakse.
 
 ## Kuidas indeksfondi osta?
 
-Indeksfondi (või seda jälgivat ETF-i) saab osta maakleri või panga investeerimisplatvormi kaudu — samal viisil nagu aktsiat. Paljud investorid kasutavad indeksfonde just regulaarse, automatiseeritud investeerimise jaoks: iga kuu kindel summa samasse fondi, sõltumata sellest, kas turg on parasjagu tõusnud või langenud.
+Indeksfondi (või seda jälgivat ETF-i) saab osta maakleri, panga, või mõne investeerimisplatvormi (nagu <a href="https://lightyear.com/profile/sergei601" target="_blank" rel="noreferrer, noopener">Lightyear</a>) kaudu — samal viisil nagu aktsiat. Paljud investorid kasutavad indeksfonde just regulaarse, automatiseeritud investeerimise jaoks: iga kuu kindel summa samasse fondi, sõltumata sellest, kas turg on parasjagu tõusnud või langenud.
 
 ## Kokkuvõte
 
