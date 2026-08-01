@@ -33,7 +33,7 @@ Ilma selge eesmärgita on raske hinnata, kas mingi rahaline otsus on mõistlik v
 - **Liiga ebamäärased eesmärgid,** mida on raske mõõta või millele on raske pühenduda.
 - **Liiga paljude eesmärkide korraga taga ajamine,** mis hajutab tähelepanu ja raha.
 - **Plaani puudumine ootamatute kulude jaoks,** mis lükkab teised eesmärgid pidevalt edasi.
-- **Plaani mitte kunagi ülevaatamine,** kuigi elu on vahepeal oluliselt muutunud.
+- **Plaani mitte kunagi üle vaatamine,** kuigi elu on vahepeal oluliselt muutunud.
 
 ## Kokkuvõte
 
