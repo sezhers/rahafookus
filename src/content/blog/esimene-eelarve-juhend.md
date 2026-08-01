@@ -5,11 +5,11 @@ pubDate: "2026-07-31"
 category: "saastmine-ja-eelarve"
 faq:
   - question: "Kas eelarve koostamiseks on vaja kallist tarkvara?"
-    answer: "Ei. Enamik inimesi saab suurepäraselt hakkama lihtsa tabeliga (nt Google Sheets või Excel) või isegi paberil peetava ülevaatega. Oluline on järjepidevus, mitte tööriista keerukus."
+    answer: "Ei. Enamik inimesi saab suurepäraselt hakkama lihtsa tabeliga (nt Google Sheets või Excel) või isegi paberil peetava ülevaatega (soovitavalt ikkagi tabeliga, kuna seda on lihtsam täita ja igale poole kaasa võtta). Oluline on järjepidevus, mitte tööriista keerukus."
   - question: "Kui tihti peaksin oma eelarvet üle vaatama?"
     answer: "Alguses tasub kulusid jälgida iganädalaselt, et harjuda ülevaate pidamisega. Kui eelarve on juba paika loksunud, piisab enamasti igakuisest üle vaatamisest, koos suurema ülevaatega paar korda aastas."
   - question: "Mida teha, kui minu kulud ületavad pidevalt sissetulekut?"
-    answer: "Vaata esmalt läbi suurimad kulukategooriad (nt eluase, transport, toit) — sageli on seal suurim kokkuhoiuvõimalus, mitte väikestes igapäevastes ostudes. Kui suuremaid kulusid pole võimalik kärpida, tasub kaaluda ka sissetuleku suurendamise võimalusi."
+    answer: "Vaata esmalt läbi suurimad kulukategooriad (nt eluase, transport, toit) — sageli on suurim kokkuhoiuvõimalus just seal, mitte väikestes igapäevastes ostudes. Kui suuremaid kulusid pole võimalik kärpida, tasub kaaluda ka sissetuleku suurendamise võimalusi."
   - question: "Kas eelarve peab olema väga täpne, sentideni?"
     answer: "Ei. Alguses piisab ligikaudsest ülevaatest põhikategooriate lõikes. Liigne täpsusele keskendumine võib muuta protsessi tüütuks ja panna sind loobuma — parem on lihtne ja järjepidev süsteem kui täiuslik, kuid koormav tabel."
 ---

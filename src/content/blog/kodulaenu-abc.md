@@ -7,9 +7,9 @@ faq:
   - question: "Kui suur peab olema minu omafinantseering kodulaenu jaoks?"
     answer: "Eestis nõuavad pangad tavaliselt vähemalt 10–15% ostetava vara hinnast omafinantseeringuna, sõltuvalt sellest, kas tegemist on esimese kodu ostuga või mitte. Mida suurem on omafinantseering, seda soodsamaid tingimusi tavaliselt pakutakse."
   - question: "Kas krediidiajalugu mõjutab kodulaenu saamist?"
-    answer: "Jah. Pank kontrollib maksehäireregistrit ja varasemat maksekäitumist. Tasumata arved või hilinenud maksed võivad laenu taotlemist raskendada või tingimusi halvendada."
+    answer: "Jah. Pank kontrollib maksehäireregistrit ja varasemat maksekäitumist. Tasumata arved või hilinenud maksed võivad laenu taotlemist raskendada või tingimusi halvendada (eelkõige läbi kõrgema pangamarginaali)."
   - question: "Kas kodulaenu saab taotleda ilma kindla töölepinguta?"
-    answer: "See on keerulisem, kuid mitte võimatu. Pangad hindavad eelkõige sissetuleku stabiilsust ja jätkusuutlikkust, seega tähtajaline leping, ettevõtlustulu või muud tõendatavad sissetulekuallikad võivad samuti sobida, kui suudad neid usaldusväärselt tõendada."
+    answer: "See on keerulisem, kuid mitte võimatu. Pangad hindavad eelkõige sissetuleku stabiilsust ja jätkusuutlikkust, seega tähtajaline leping, ettevõtlustulu või muud tõendatavad regulaarsed sissetulekuallikad võivad samuti sobida, kui suudad neid usaldusväärselt tõendada."
   - question: "Mis vahe on fikseeritud ja muutuva intressiga kodulaenul?"
     answer: "Muutuva intressiga laenu puhul (nt seotud Euriboriga) võib igakuine makse ajas muutuda vastavalt turuintressidele. Fikseeritud intress püsib kokkulepitud perioodi jooksul samana, andes suurema kindluse, kuid tavaliselt kõrgema makse (kuna pank kirjutab oma riskid sinna sisse)."
 ---

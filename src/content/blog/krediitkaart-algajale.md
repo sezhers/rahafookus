@@ -9,7 +9,7 @@ faq:
   - question: "Mis on intressivaba periood ja kuidas see töötab?"
     answer: "Enamik krediitkaarte pakub intressivaba perioodi (tavaliselt kuni ~45 päeva), mille jooksul saad kasutatud summa tagasi maksta ilma intressi maksmata. Intress hakkab kehtima alles siis, kui jätad osa võlast selle perioodi lõpuks tasumata."
   - question: "Kas piisab, kui maksan iga kuu ainult miinimummakse?"
-    answer: "Miinimummakse tasumine hoiab konto formaalselt korras, kuid ülejäänud võlajäägile hakkab koguma intressi, mis võib pika aja jooksul muutuda üsna kulukaks. Parim on tasuda kogu kasutatud summa iga kuu täies ulatuses."
+    answer: "Miinimummakse tasumine hoiab konto formaalselt korras, kuid ülejäänud võlajäägile hakkab kogunema intress, mis võib pika aja jooksul muutuda üsna kulukaks. Parim on tasuda kogu kasutatud summa iga kuu täies ulatuses."
   - question: "Kuidas valida endale sobiv krediidilimiit?"
     answer: "Sobiv limiit on selline, mida suudad reaalselt igakuiselt tagasi maksta, mitte maksimaalne summa, mida pank on nõus pakkuma. Mõistlik lähtepunkt on hoida limiit oma igakuisest sissetulekust selgelt madalamal."
 ---
@@ -18,21 +18,21 @@ Krediitkaart võib olla kasulik tööriist, kuid ilma selgete harjumusteta muutu
 
 ## Kuidas krediitkaart tegelikult toimib
 
-Erinevalt deebetkaardist ei kasuta sa krediitkaardiga oma raha, vaid panga poolt antud krediidilimiiti. Igal kuul saadetakse sulle arve kasutatud summa kohta, mille saad tavaliselt intressivaba perioodi jooksul tasuda ilma lisakuluta. Kui jätad osa sellest tasumata, hakkab ülejäänud summale koguma intress — sageli oluliselt kõrgem kui tarbimislaenul.
+Erinevalt deebetkaardist ei kasuta sa krediitkaardiga oma raha, vaid panga poolt antud krediidilimiiti. Igal kuul saadetakse sulle arve kasutatud summa kohta, mille saad tavaliselt intressivaba perioodi jooksul tasuda ilma lisakuluta. Kui jätad osa sellest tasumata, hakkab ülejäänud summale koguma intress — sageli tarbimislaenule sarnane (~16-20%).
 
 ## Levinumad lõksud
 
 - **Ainult miinimummakse tasumine.** See jätab suure osa võlast intressi alla ja pikendab tagasimakseperioodi märkimisväärselt.
 - **Sularaha väljavõtmine krediitkaardilt.** See on tavaliselt kallim toiming kui tavaline ostu sooritamine ja sellel puudub sageli intressivaba periood.
-- **Limiidi käsitlemine "lisarahana".** Krediidilimiit ei ole sinu sissetulek — see on laen, mis tuleb tagasi maksta.
+- **Limiidi käsitlemine "lisarahana".** Krediidilimiit ei ole sinu sissetulek ega vaba raha — see on laen, mis tuleb tagasi maksta.
 - **Mitme krediitkaardi kogunemine.** Mitme kaardi limiitide summeerudes on lihtne kaotada ülevaade tegelikust kohustuste mahust.
 
 ## Harjumused, mis hoiavad sind võla eest
 
 1. **Maksa iga kuu kogu kasutatud summa täies ulatuses.** Nii väldid intressi täielikult.
-2. **Sea meelde tuletus maksetähtaja jaoks.** Isegi üksik unustatud tähtaeg võib tekitada intressikulu ja mõjutada krediidiajalugu.
+2. **Sea meeldetuletus maksetähtaja jaoks.** Isegi üksik unustatud tähtaeg võib tekitada intressikulu ja mõjutada krediidiajalugu.
 3. **Kasuta kaarti planeeritud kulude, mitte impulssostude jaoks.** Krediitkaart peaks täiendama sinu eelarvet, mitte seda asendama.
-4. **Jälgi oma limiidi kasutuse määra.** Hoia kasutus võimalusel oluliselt alla kogu limiidi, mitte selle piiri peal.
+4. **Jälgi oma limiidi kasutuse määra.** Hoia kasutus võimalusel oluliselt alla kogu limiidi, mitte selle piiri lähedal.
 
 ## Kokkuvõte
 
