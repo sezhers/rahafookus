@@ -15,6 +15,14 @@
 /kategooria/saastmine-ja-eelarve/   /saastmine-ja-eelarve/    301
 /kategooria/krypto/                 /krypto/                  301
 
+# Esimese deploy'i katsetusest indekseerunud URL-id (/teemad/x/) -> uued (/x/)
+/teemad/laenud-krediit/       /laenud-ja-krediit/       301
+/teemad/pangandus/            /nutikas-pangandus/       301
+/teemad/saastmine-eelarve/    /saastmine-ja-eelarve/    301
+/teemad/investeerimine/       /investeerimine/          301
+/teemad/kruptoraha/           /krypto/                  301
+/teemad/rahatarkus/           /rahatarkus/              301
+
 # Vanad postituste URL-id (/postitused/<slug>/) -> uued (/<kategooria>/<slug>/)
 # Kõik 9 praegust postitust kuuluvad "investeerimine" kategooriasse.
 /postitused/kuidas-alustada-investeerimisega/  /investeerimine/kuidas-alustada-investeerimisega/  301

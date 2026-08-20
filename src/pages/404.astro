@@ -1,0 +1,43 @@
+---
+// Astro genereerib sellest build'i ajal /404.html.
+// Cloudflare Pages serveerib selle faili automaatselt (koos 404 staatuskoodiga)
+// iga URL-i jaoks, mis ei vasta ühelegi olemasolevale lehele või failile.
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Lehte ei leitud | Rahafookus";
+const description = "Otsitud lehte ei leitud. Võimalik, et see on eemaldatud või URL on muutunud.";
+---
+
+<!doctype html>
+<html lang="et">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main class="not-found">
+			<h1>404 — lehte ei leitud</h1>
+			<p>
+				Kahjuks ei leidnud me lehte, mida otsisid. Võimalik, et see on eemaldatud või URL on
+				muutunud.
+			</p>
+			<p><a href="/">Mine avalehele</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.not-found {
+		max-width: 840px;
+		margin: 0 auto;
+		padding: 4rem 1rem;
+		line-height: 1.6;
+		text-align: center;
+	}
+	.not-found h1 {
+		margin-bottom: 1rem;
+	}
+</style>
