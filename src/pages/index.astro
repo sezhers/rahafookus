@@ -8,16 +8,43 @@ import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import { getCollection } from "astro:content";
 import { SITE_TITLE, SITE_DESCRIPTION, CATEGORIES } from "../consts";
+import FallbackImage from "../assets/logo.png";
 
 const latestPosts = (await getCollection("blog", (post) => post.data.pubDate <= new Date()))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 3);
+
+const siteURL = new URL(Astro.url.pathname, Astro.site).toString();
+const logoURL = new URL(FallbackImage.src, Astro.site).toString();
+
+const organizationSchema = {
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	name: "Red Hornet OÜ",
+	url: siteURL,
+	logo: logoURL,
+};
+
+const websiteSchema = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	name: SITE_TITLE,
+	url: siteURL,
+	description: SITE_DESCRIPTION,
+	inLanguage: "et",
+	publisher: {
+		"@type": "Organization",
+		name: "Red Hornet OÜ",
+	},
+};
 ---
 
 <!doctype html>
 <html lang="et">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema).replace(/</g, '\\u003c')} />
+		<script type="application/ld+json" set:html={JSON.stringify(websiteSchema).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
 		<Header />
@@ -59,7 +86,15 @@ const latestPosts = (await getCollection("blog", (post) => post.data.pubDate <= 
 								<a href={`/${post.data.category}/${post.id}/`}>
 									<h3>{post.data.title}</h3>
 									<p>{post.data.description}</p>
-									<FormattedDate date={post.data.pubDate} />
+									{
+										post.data.updatedDate ? (
+											<span class="post-date">
+												Uuendatud <FormattedDate date={post.data.updatedDate} />
+											</span>
+										) : (
+											<FormattedDate date={post.data.pubDate} />
+										)
+									}
 								</a>
 							</li>
 						))

@@ -12,6 +12,23 @@ const author = AUTHORS.find((a) => a.slug === "sergei")!;
 const title = `${author.name} | ${SITE_TITLE}`;
 const description = `${author.name} — ${author.role}. ${author.shortBio}`;
 
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const photoURL = new URL(sergeiPhoto.src, Astro.url).toString();
+
+const personSchema = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: author.name,
+	url: canonicalURL,
+	image: photoURL,
+	jobTitle: author.role,
+	description: author.shortBio,
+	worksFor: {
+		"@type": "Organization",
+		name: "Red Hornet OÜ",
+	},
+};
+
 // TODO: täienda oma varasema töökogemusega
 const experience = [
 	{
@@ -36,6 +53,7 @@ const experience = [
 <html lang="et">
 	<head>
 		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(personSchema).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
 		<Header />
