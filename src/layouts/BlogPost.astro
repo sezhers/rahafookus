@@ -26,7 +26,8 @@ const blogPostingSchema = {
 	description,
 	image: [imageURL.toString()],
 	datePublished: pubDate.toISOString(),
-	...(updatedDate ? { dateModified: updatedDate.toISOString() } : {}),
+	dateModified: (updatedDate ?? pubDate).toISOString(),
+	inLanguage: "et",
 	mainEntityOfPage: {
 		"@type": "WebPage",
 		"@id": canonicalURL.toString(),
@@ -65,7 +66,7 @@ const faqSchema =
 		: null;
 ---
 
-<html lang="en">
+<html lang="et">
 	<head>
 		<BaseHead title={title} description={description} />
 		<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema).replace(/</g, '\\u003c')} />
@@ -153,7 +154,7 @@ const faqSchema =
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+										Viimati uuendatud <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}

@@ -53,7 +53,15 @@ const intro = category.intro ?? category.description;
 								<a href={`/${category.slug}/${post.id}/`}>
 									<h2>{post.data.title}</h2>
 									<p>{post.data.description}</p>
-									<FormattedDate date={post.data.pubDate} />
+									{
+										post.data.updatedDate ? (
+											<span class="post-date">
+												Uuendatud <FormattedDate date={post.data.updatedDate} />
+											</span>
+										) : (
+											<FormattedDate date={post.data.pubDate} />
+										)
+									}
 								</a>
 							</li>
 						))}
