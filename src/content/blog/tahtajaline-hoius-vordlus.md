@@ -1,7 +1,8 @@
 ---
 title: "Tähtajaline hoius: võrdlus ja millele tähelepanu pöörata"
-description: "Mis on tähtajaline hoius, kuidas erinevad pankade (nt LHV, Inbank) pakkumised ja millele hoiust valides tähelepanu pöörata."
+description: "Mis on tähtajaline hoius, kuidas erinevad pankade (nt LHV, Inbank) pakkumised ja millele hoiust valides tähelepanu pöörata. Sisaldab pankade intressimäärade võrdlustabelit."
 pubDate: "2026-07-29"
+updatedDate: "2026-08-23"
 category: "investeerimine"
 ---
 
@@ -21,14 +22,42 @@ Intressimäärad muutuvad turutingimuste ja Euroopa Keskpanga intressipoliitika 
 
 ## Tähtajaline hoius vs. kogumishoius
 
-Neid kahte aetakse tihti segamini:
+Neid kahte aetakse tihti segamini, kuid need sobivad erinevateks olukordadeks.
 
-- **Tähtajaline hoius** sobib olemasoleva summa paigutamiseks kindlaks perioodiks — raha on lukus, kuid intress on üldjuhul kõrgem.
-- **Kogumishoius** sobib regulaarseks säästmiseks (nt igakuine ülekanne) — raha on tavaliselt paindlikumalt kättesaadav, kuid intress jääb sageli mõnevõrra madalamaks.
+**Tähtajaline hoius:**
+- sobib olemasoleva summa paigutamiseks kindlaks, ette teada perioodiks;
+- intressimäär on hoiuperioodi alguses fikseeritud ega muutu enne tähtaja lõppu;
+- raha on üldjuhul "lukus" — ligipääsuks enne tähtaega tuleb leping ennetähtaegselt lõpetada ja kaotad tavaliselt kogunenud intressi.
 
-## LHV, Inbank ja teised — mida võrrelda
+**Kogumishoius (ka kogumiskonto):**
+- sobib regulaarseks säästmiseks, nt kindla summa igakuine ülekandmine palgapäeval;
+- raha on tavaliselt paindlikult kättesaadav — saad soovi korral igal ajal raha välja võtta ilma trahvi või intressi kaotamiseta;
+- intressimäär ei ole fikseeritud ja pank võib seda igal ajal muuta (nii üles kui alla), erinevalt tähtajalise hoiuse lukustatud määrast;
+- intress jääb enamasti mõnevõrra madalamaks kui parimatel tähtajalistel hoiustel, kuna paindlikkuse eest "maksad" veidi madalama tootlusega.
 
-Kui võrdled erinevate pankade tähtajalisi hoiuseid, tasub lisaks intressimäärale vaadata:
+Lihtsustatult: kui tead täpselt, millal raha vaja läheb, ja soovid kindlat tootlust, sobib tähtajaline hoius paremini. Kui kogud regulaarselt ja tahad säilitada paindlikkuse raha igal ajal kätte saada, sobib kogumishoius. Osad pangad (nt Bigbank) pakuvad ka paindliku, kuid kõrgema intressiga arvelduskonto-tüüpi toodet — vaata täpsemat võrdlust [artiklist panga valimise kohta](/nutikas-pangandus/milline-pank-sobib-sulle/#kas-pank-maksab-intressi-arvelduskonto-jäägilt).
+
+## Pankade tähtajaliste hoiuste võrdlus (12 kuud)
+
+Alltoodud tabel põhineb Finantsinspektsiooni hoiuste intressibaromeetril (minuraha.ee), mis koondab Eestis tegutsevate pankade 12-kuulise tähtajalise hoiuse intressimäärad. Andmed on koondatud seisuga 21. august 2026 — pangad uuendavad oma määrasid erineval ajal, mistõttu on igal real ka panga enda viimase uuenduse kuupäev.
+
+| Pank | Intressimäär | Miinimumsumma | Viimati muudetud |
+| --- | --- | --- | --- |
+| Holm Bank | 2,70% | 100 € | 09.06.2026 |
+| Bigbank | 2,60% | 500 € | 20.07.2026 |
+| Inbank | 2,50% | 500 € | 22.12.2025 |
+| Coop Pank | 2,25% | 100 € | 09.07.2026 |
+| Citadele | 2,20% | 100 € | 21.08.2026 |
+| LHV | 2,20% | 100 € | 03.07.2026 |
+| Luminor | 2,20% | 100 € | 01.07.2026 |
+| Swedbank | 2,20% | 190 € | 21.07.2026 |
+| SEB | 2,00% | 500 € | 20.07.2026 |
+
+*Allikas: [Finantsinspektsiooni hoiuste intressibaromeeter](https://minuraha.ee/et/pangandus/hoiused/hoiuste-intressibaromeeter), minuraha.ee.* Intressimäärad muutuvad pidevalt — mõne panga andmed tabelis võivad olla mitu kuud vanad (nt Inbanki puhul), seega kontrolli enne otsustamist alati kehtivat määra otse baromeetrist või panga enda kodulehelt.
+
+## LHV, Inbank ja teised — mida veel võrrelda
+
+Lisaks ülaltoodud intressimäärale tasub erinevate pankade tähtajalisi hoiuseid võrreldes vaadata ka:
 
 - **Miinimumsumma** — mõnel pakkujal saab hoiuse avada juba 100 euroga, teistel on miinimum kõrgem (nt 500 eurot).
 - **Intressi väljamakse ajastus** — kas intress makstakse hoiuperioodi lõpus või jooksvalt (nt igakuiselt); perioodi lõpus makstav intress on sageli kõrgem.

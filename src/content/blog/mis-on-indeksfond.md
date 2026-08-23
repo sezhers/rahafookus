@@ -1,7 +1,8 @@
 ---
 title: "Mis on indeksfond ja miks see algajale sobib?"
-description: "Selgitame lihtsas keeles, mis on indeksfond, kuidas see toimib ning miks paljud algajad ja kogenud investorid eelistavad seda üksikaktsiate valimisele."
+description: "Selgitame lihtsas keeles, mis on indeksfond, kuidas see toimib, kuidas valida sobiv indeksfond või ETF ning miks paljud algajad ja kogenud investorid eelistavad seda üksikaktsiate valimisele."
 pubDate: "2026-07-29"
+updatedDate: "2026-08-23"
 category: "investeerimine"
 ---
 
@@ -29,12 +30,16 @@ Praktikas kohtab indeksfonde enamasti kahes vormis:
 
 Mõlemad võivad jälgida sama indeksit — erinevus on peamiselt selles, kuidas ja kust neid ostad, mitte fondi enda strateegias.
 
-## Millele indeksfondi valides tähelepanu pöörata
+## Kuidas valida sobiv indeksfond või ETF?
 
-- **Kulumäär (TER).** Isegi väike erinevus (nt 0,1% vs. 0,5% aastas) mõjutab aastate lõikes tootlust märgatavalt tänu liitintressi efektile.
-- **Milline indeks.** Mõni fond jälgib ainult üht riiki või sektorit (suurem risk, väiksem hajutatus), teine aga laia globaalset indeksit.
-- **Fondi suurus ja likviidsus.** Suuremad ja likviidsemad fondid on üldjuhul stabiilsemad ja kergemini kaubeldavad.
-- **Valuuta ja maksustamine.** Fondi baasvaluuta ja selle jurisdiktsioon (nt Iirimaal või Luksemburgis registreeritud fondid) võivad mõjutada, kuidas dividendid ja müügikasum sinu jaoks maksustatakse.
+Kui oled otsustanud, et indeksfond on sulle sobiv, tuleb valida konkreetsete pakkujate vahel. Neli kõige olulisemat kriteeriumi:
+
+1. **Kulumäär (TER).** Isegi väike erinevus (nt 0,1% vs. 0,5% aastas) mõjutab aastate lõikes tootlust märgatavalt tänu liitintressi efektile — madalam kulumäär on üldjuhul parem, kui muud tegurid on sarnased.
+2. **Milline indeks.** Mõni fond jälgib ainult üht riiki või sektorit (suurem risk, väiksem hajutatus), teine aga laia globaalset indeksit (nt MSCI World või FTSE All-World) — algajale sobib enamasti laiapõhjalisem valik.
+3. **Fondi suurus ja likviidsus.** Suuremad (nt üle 500 miljoni euro mahuga) ja likviidsemad fondid on üldjuhul stabiilsemad, kergemini kaubeldavad ning väiksema riskiga, et fond tulevikus suletakse.
+4. **Valuuta, maksustamine ja replikatsioonimeetod.** Fondi baasvaluuta ja jurisdiktsioon (nt Iirimaal või Luksemburgis registreeritud fondid) mõjutavad, kuidas dividendid ja müügikasum sinu jaoks maksustatakse; samuti tasub teada, kas fond on akumuleeruv (dividendid reinvesteeritakse automaatselt) või jaotav (dividendid makstakse sulle välja).
+
+Kahtluse korral on mõistlik lähtepunkt laiapõhjaline, madala kulumääraga ja suure fondimahuga globaalne indeksfond või ETF — see annab kohese hajutatuse paljude riikide ja ettevõtete vahel ilma, et peaksid ise üksikuid sektoreid või riike valima.
 
 ## Kuidas indeksfondi osta?
 
