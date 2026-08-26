@@ -43,4 +43,6 @@ Kodulaenu taotlemisel hindab pank eelkõige sinu maksevõimet ja riski. Levinuma
 
 Kodulaenu taotlemine tundub alguses keeruline protsess, kuid enamik sellest taandub sinu korralikkusele: näita oma korrapärane sissetulek, korras krediidiajalugu ja mõistlik omafinantseering. Mida rohkem sa end eelnevalt ette valmistad, seda sujuvamalt ja soodsamatel tingimustel laenuprotsess tavaliselt kulgeb.
 
+Kui sul on kodulaen juba olemas, tasub aeg-ajalt üle kontrollida ka seda, kas praegune marginaal on ikka konkurentsivõimeline — loe lähemalt: [kas tasub pangalt küsida kodulaenu marginaali alandamist?](/laenud-ja-krediit/kodulaenu-marginaali-alandamine/)
+
 *See artikkel on loodud informatiivsel eesmärgil ega ole personaalne finantsnõu. Konkreetsed laenutingimused ja nõuded erinevad panguti ning tasub alati küsida pakkumist mitmelt pangalt.*
