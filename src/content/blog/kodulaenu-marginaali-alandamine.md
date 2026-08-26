@@ -1,7 +1,7 @@
 ---
 title: "Kas tasub pangalt küsida kodulaenu marginaali alandamist? Jah"
 description: "Miks tasub oma kodulaenu marginaali panga käest üle küsida, kui see on mõistlik teha ning millised dokumendid ja tingimused aitavad parema pakkumise saada."
-pubDate: "2026-08-23"
+pubDate: "2026-08-26"
 category: "laenud-ja-krediit"
 faq:
   - question: "Kas marginaali küsimine jätab mulle negatiivse märgi, kui pank ütleb ei?"
